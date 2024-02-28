@@ -1,6 +1,6 @@
 function Footer(){
     return(
-        <p> jjojo </p>
+        <p> HOLA YO SOY EL FOOTER :v </p>
     
     )
     }
