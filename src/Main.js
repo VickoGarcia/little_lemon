@@ -23,35 +23,33 @@ function Main(){
             <button className="btnReserveaTable">Online Menu</button>
         </div>
     </div>
-    <div>
-        <section id="section">
-            <article id="article1">
-                <div class="gift_box">
-                    <img src="greek salad.jpg" alt="special dish 1" />
+    <div id="wekkspecialoffers" className="weekspecialoffers">
+            <div id="dishcard" className="dishcard">
+                <div className="dishImage">
+                    <img src="greek salad.jpg" alt="special dish 1" width={80} height={80} />
                 </div>
                 <h2>Greek salad</h2>
-                <p>The famous greek salaad of crispy lettuce, peppers, olives and our
+                <p className="offerInfo">The famous greek salaad of crispy lettuce, peppers, olives and our
                     Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
-            </article>
-            <article id="article2">
-                <div>
+            </div>
+            <div id="dishcard" className="dishcard">
+                <div className="dishImage">
                     <img src="bruschetta.jpg" alt="special dish 2"/>
                 </div>
                 <h2>Bruschetta</h2>
-                <p>Our Bruschetta is made from grilled bread that has been smeared
+                <p className="offerInfo">Our Bruschetta is made from grilled bread that has been smeared
                     with garlic and seasoned with salt and olive oil.
                 </p>
-            </article>
-            <article id="article3">
-                <div>
+            </div>
+            <div id="dishcard" className="dishcard">
+                <div className="dishImage">
                     <img src="lemon dessert.jpg" alt="special dish 3"/>
                 </div>
                 <h2>Lemon dessert</h2>
-                <p>This comes straight from grandma's recipe book, every last ingredient
+                <p className="offerInfo">This comes straight from grandma's recipe book, every last ingredient
                     has been sourced and is as authentic as can be imagined.
                 </p>
-            </article>
-        </section>
+            </div>
     </div>
     </div>
     )
