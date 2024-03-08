@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
-import Home from './Home';
-import BookingPage from './BookingPage';
-import About from './About';
-import {Route, Routes} from 'react-router-dom';
+
 
 function Nav(){
     return(<>
@@ -17,11 +14,7 @@ function Nav(){
             <li>Login</li>
         </ul>
     </nav>
-    <Routes>
-        <Route path="/" element={<Home />}> </Route>
-        <Route path="/booking" element={<BookingPage />}></Route>
-        <Route path="/about" element={<About />}></Route>
-    </Routes>
+    
     </>
     )
     }

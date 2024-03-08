@@ -1,18 +1,11 @@
 import {useState} from "react";
 
-function BookingForm(){
+function BookingForm(props){
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [guests, setGuest] = useState("");
     const [occasion, setOccasion] = useState("");
-    const [availableTimes] = useState([
-        {id: 1, time: "17:00" , available: true},
-        {id: 2, time: "18:00" , available: true},
-        {id: 3, time: "19:00" , available: true},
-        {id: 4, time: "20:00" , available: true},
-        {id: 5, time: "21:00" , available: true},
-        {id: 6, time: "22:00" , available: true}
-    ])
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,7 +24,7 @@ function BookingForm(){
             <div className="field">
             <label htmlFor="res-time">Choose time</label>
             <select id="res-time " value={time} onChange={(e) => setTime(e.target.value)}>
-                {availableTimes.map(f => <option key={f.id}>{f.time}</option>)}
+                {props.availableTimes.map(f => <option key={f.id}>{f.time}</option>)}
           
             </select>
             </div>

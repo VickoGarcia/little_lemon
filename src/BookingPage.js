@@ -1,6 +1,6 @@
 import BookingForm from "./BookingForm"
 
-function BookingPage(){
+function BookingPage(props){
     return(
     <div className="bookingPage">
         <div className="main">
@@ -17,7 +17,7 @@ function BookingPage(){
                 <img src="tablereservation.jpg" alt="tables" />
             </div>
         </div>
-        <BookingForm />
+        <BookingForm availableTimes={props.availableTimes}/>
     </div>
     )
 }
