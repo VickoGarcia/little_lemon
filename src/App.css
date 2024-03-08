@@ -258,7 +258,7 @@ article {
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 400px;
   margin-top: 60px;
 
 }
@@ -379,9 +379,10 @@ article {
 .footerContainer{
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 10%;
   align-content: center;
-  margin:10%;
+  margin-top: 10%;
 
 }
 
@@ -421,6 +422,15 @@ article {
   flex-direction: column;
 }
 
+.bookingPage{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookingPage p{
+  max-width: 65ch;
+}
 
 
 @media only screen and (max-width: 700px) {
