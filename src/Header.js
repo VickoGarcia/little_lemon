@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 function Header(){
     return(
         <>
@@ -12,7 +12,7 @@ function Header(){
                     recipes served with a modern <br />
                     twist.
                 </p>
-                <button className="btnReserveaTable">Reserve a Table</button>
+                <Link to="/Booking"><button className="btnReserveaTable" aria-label="On Click">Reserve a Table</button></Link>
             </div>
             <div className="mainImage">
                 <img src="restauranfood.jpg" alt="restaurant food" />

@@ -1,8 +1,6 @@
-import BookingForm from "./BookingForm"
-
-function BookingPage(props){
+function Confirmation(){
     return(
-    <div className="bookingPage">
+        <div className="bookingPage">
         <div className="main">
             <div className="maintext">
                 <div className="displaytitle">Little Lemon</div>
@@ -17,9 +15,14 @@ function BookingPage(props){
                 <img src="tablereservation.jpg" alt="tables" />
             </div>
         </div>
-        <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch} submitForm={props.submitForm}/>
-    </div>
+        <div className="weekSpecials">
+            <h1> Your reservation has been confirmed!</h1>
+        </div>
+        <div>
+            <p>Thank You for Choosing us to delivery awesome and delicious food!</p>
+        </div>
+        </div>
     )
 }
 
-export default BookingPage;
+export default Confirmation;
